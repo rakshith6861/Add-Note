@@ -11,3 +11,92 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.todo-list{
+  background-color:rgba(0, 0, 0, 0.622);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+
+}
+.todo{
+  background-color: rgb(79, 235, 1);
+  width: 290px;
+  text-align: center;
+  border-radius:17px ;
+ 
+}
+.input{
+   text-align: center;
+   margin-bottom: 15px;
+   margin-top: 7px;
+    
+}
+button{
+  height: 30px;
+  width: 30px;
+  border-radius: 5px;
+  border:0.1px solid white;
+  margin-left: 3px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+input{
+  height: 25px;
+  border-radius: 5px;
+  border:0.1px solid white;
+}
+.list{
+  display: flex;
+  flex-direction: column;
+  /* background-color:blue; */
+}
+.item-list{
+   background-color:rgb(33, 33, 56);
+   color: white;
+   height: 30px;
+   display: flex;
+   justify-content: space-between;
+   padding-left:9px ;
+   margin-left:15px ;
+   margin-right:15px ;
+   margin-bottom: 15px;
+   border-radius:6px ;
+  
+}
+.delete-btn{
+  align-items: flex-end;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border:1px solid white;
+  outline: none;
+  padding: 2px;
+  margin-top: 2px;
+  margin-right: 7px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+
+@media only screen and (max-width:600px){
+  .todo-list{
+    background-color:rgba(0, 0, 0, 0.622);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .todo{
+    position: relative;
+    top: -35vh;
+  }
+  
+}
